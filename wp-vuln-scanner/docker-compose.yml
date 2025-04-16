@@ -1,0 +1,14 @@
+services:
+  wp-scanner-py:
+    build:
+      context: ./python-app
+      dockerfile: Dockerfile
+    # working_dir: .
+    command: python main.py
+    stdin_open: true
+    tty: true
+
+  wp:
+    image: wordpress:cli
+    entrypoint: ["wp"]
+    command: ["--info"]
