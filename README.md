@@ -18,7 +18,8 @@ This project makes use of the 2 following projects:
 
 ## CVE-Scan:
 A modified version of CVE-Scan is used in .
-The original CVE-Scan is licensed under the "Original BSD License":
+The original CVE-Scan scans systems with NMap and parse the output to a list of CVE's, CWE's and DPE's.
+It is free software licensed under the "Original BSD License":
 https://github.com/NorthernSec/CVE-Sca
 
 Thus, this product includes software developed by:
@@ -28,7 +29,8 @@ Thus, this product includes software developed by:
 ```
 
 ## CVE-Search
-cve-search is free software released under the "GNU Affero General Public License v3.0"
+cve-search is a tool to import CVE (Common Vulnerabilities and Exposures) and CPE (Common Platform Enumeration) into a MongoDB to facilitate search and processing of CVEs.
+It is free software released under the "GNU Affero General Public License v3.0"
 
 ```
 Copyright (c) 2012 Wim Remes - https://github.com/wimremes/
