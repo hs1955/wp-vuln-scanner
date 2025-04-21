@@ -1,2 +1,6 @@
 /dissertation.code-workspace
 /wordpress
+/wp-vuln-scanner/cve-search
+/wp-vuln-scanner/nist-cve-search
+/wp-vuln-scanner/nmap-cve-search
+/TODO.md
