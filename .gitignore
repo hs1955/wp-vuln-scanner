@@ -6,3 +6,4 @@
 /.venv
 /wp-vuln-scanner/wp-cve-scan/ssh-keys/*
 /TODO.md
+__pycache__/
