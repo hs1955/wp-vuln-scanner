@@ -1,9 +1,10 @@
-/dissertation.code-workspace
-/wordpress
-/wp-vuln-scanner/cve-search
-/wp-vuln-scanner/nist-cve-search
-/wp-vuln-scanner/nmap-cve-search
-/.venv
-/wp-vuln-scanner/wp-cve-scan/ssh-keys/*
-/TODO.md
+# Ignore everything
+*
+
+# Allow specific files and directories
+!wp-cve-search/
+!nist-cve-search/
+!README.md
+
+# Ignore these directories
 __pycache__/
