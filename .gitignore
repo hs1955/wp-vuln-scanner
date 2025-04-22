@@ -4,7 +4,7 @@
 # Allow specific files and directories
 !wp-vuln-scanner/
 !wp-vuln-scanner/wp-cve-scan/
-!wp-vuln-scanner/wp-cve-scan/*
+!wp-vuln-scanner/wp-cve-scan/**
 !wp-cve-search/
 !nist-cve-search/
 !README.md
