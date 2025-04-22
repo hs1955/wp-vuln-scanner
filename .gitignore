@@ -6,7 +6,8 @@
 !wp-vuln-scanner/wp-cve-scan/
 !wp-vuln-scanner/wp-cve-scan/**
 !wp-cve-search/
-!nist-cve-search/
+!wp-vuln-scanner/nist-cve-search/
+!wp-vuln-scanner/nist-cve-search/**
 !README.md
 
 # Ignore these directories
