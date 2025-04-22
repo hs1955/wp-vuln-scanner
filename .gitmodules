@@ -1,0 +1,3 @@
+[submodule "wp-vuln-scanner/wp-cve-scan/nist-cve-search-tool"]
+	path = wp-vuln-scanner/wp-cve-scan/nist-cve-search-tool
+	url = https://github.com/stratosphereips/nist-cve-search-tool
