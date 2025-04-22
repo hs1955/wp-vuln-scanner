@@ -13,28 +13,8 @@ Copyright (c) 2025 - https://github.com/hs1955/
 Copyright (c) 2025 - University of York
 ```
 
-This project makes use of the 2 following projects:
+This project makes use of the following project:
 
-
-## CVE-Scan:
-A modified version of CVE-Scan is used in .
-The original CVE-Scan scans systems with NMap and parse the output to a list of CVE's, CWE's and DPE's.
-It is free software licensed under the "Original BSD License":
-https://github.com/NorthernSec/CVE-Sca
-
-Thus, this product includes software developed by:
-```
-(C) 2015  NorthernSec           https://github.com/NorthernSec
-(c) 2015  Pieter-Jan Moreels	https://github.com/pidgeyl
-```
-
-## CVE-Search
-cve-search is a tool to import CVE (Common Vulnerabilities and Exposures) and CPE (Common Platform Enumeration) into a MongoDB to facilitate search and processing of CVEs.
-It is free software released under the "GNU Affero General Public License v3.0"
-
-```
-Copyright (c) 2012 Wim Remes - https://github.com/wimremes/
-Copyright (c) 2012-2024 Alexandre Dulaunoy - https://github.com/adulau/
-Copyright (c) 2015-2019 Pieter-Jan Moreels - https://github.com/pidgeyl/
-Copyright (c) 2020-2024 Paul Tikken - https://github.com/P-T-I
-```
+## nist-cve-search-tool
+nist-cve-search-tool is a tool to search through CVEs (Common Vulnerabilities and Exposures) on the NIST Database, using NIST Data Feeds.
+It is free software released under the "GPL-3.0 License"
