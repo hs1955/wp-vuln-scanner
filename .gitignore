@@ -3,5 +3,6 @@
 /wp-vuln-scanner/cve-search
 /wp-vuln-scanner/nist-cve-search
 /wp-vuln-scanner/nmap-cve-search
-/wp-vuln-scanner/py-venv
+/.venv
+/wp-vuln-scanner/wp-cve-scan/ssh-keys/*
 /TODO.md
