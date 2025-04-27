@@ -12,4 +12,5 @@
 __pycache__/
 
 # Ignore these files
+wp-vuln-scanner/wp-cve-scan/app/templates/mvp.html
 *.json
