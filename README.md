@@ -4,7 +4,7 @@ The aim of this project is to build a fairly easy to use open-source application
 Motivation:
 So I would like my app to have the potential to be an open source wordpress website vulnerability scanner.
 
-This product requires a NIST API Key to work.
+This product doesn't require a NIST API Key to work, but you get 10x faster download speeds with one, so I recommend obtaining one.
 
 "This product uses the NVD API but is not endorsed or certified by the NVD."
 
@@ -16,11 +16,4 @@ Copyright (c) 2025 - https://github.com/hs1955/
 Copyright (c) 2025 - University of York
 ```
 
-This project makes use of the following project:
-
-## nist-cve-search-tool
-nist-cve-search-tool is a tool to search through CVEs (Common Vulnerabilities and Exposures) on the NIST Database, using NIST Data Feeds.
-It is free software released under the "GPL-3.0 License"
-
-Original Source Code:
-https://github.com/stratosphereips/nist-cve-search-tool?tab=readme-ov-file
+This project makes use of NIST API. Specific Common Platform Enumerations (CPEs) and Common Vulnerabilities and Exposures (CVEs) mentioning Wordpress are obtained and downloaded from the NIST database.
