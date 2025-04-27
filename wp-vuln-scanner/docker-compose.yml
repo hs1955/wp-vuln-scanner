@@ -11,7 +11,8 @@ services:
     # the WP-CLI container to scan WordPress sites.
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
-    - ./wp-cve-scan/ssh-keys:/usr/src/app/wp-cve-scan/ssh-keys
+    # - ./wp-cve-scan/ssh-keys:/usr/src/app/wp-cve-scan/ssh-keys
+    - ./wp-cve-scan/files:/usr/src/app/wp-cve-scan/files
     # networks:
     #   - wp-cve-scan-network
     ports:
