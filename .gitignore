@@ -2,17 +2,12 @@
 *
 
 # Allow specific files and directories
-!wp-vuln-scanner/
-!wp-vuln-scanner/wp-cve-scan/
-!wp-vuln-scanner/wp-cve-scan/**
-!wp-cve-search/
+!wp-cve-scan/
+!wp-cve-scan/**
 !README.md
 
 # Ignore these directories
 __pycache__/
 
 # Ignore these files
-wp-vuln-scanner/wp-cve-scan/app/templates/mvp.html
-wp-vuln-scanner/wp-cve-scan/scripts/lib/tapir.py
-wp-vuln-scanner/wp-cve-scan/app
 *.json
