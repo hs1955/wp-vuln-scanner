@@ -1,22 +1,27 @@
 # Wordpress Vulnerability Scanner
-The aim of this project is to build a fairly easy to use open-source application that can help detect vulnerabilities on specifically wordpress websites, to help users, especially newer ones, effectively secure their websites.
-
-Motivation:
-So I would like my app to have the potential to be an open source wordpress website vulnerability scanner.
-
-This product doesn't require a NIST API Key to work, but you get 10x faster download speeds with one, so I recommend obtaining one from here (it's free and instant): https://nvd.nist.gov/general/news/API-Key-Announcement
+An white-box vulnerability scanner that can detect vulnerabilities on specifically wordpress websites, and recommend solutions to remediating identified vulnerabilities.
 
 "This product uses the NVD API but is not endorsed or certified by the NVD."
 
-## How to Run
+## How does it Work
 
+1. It works by being installed and run on a Docker instance running on the same machine hosting the Wordpress site.
+2. The scanner will download and use an appropriate wp-cli image to scan the Wordpress site for assets.
+3. Then the scanner will download CVEs and CPEs from National Vulnerability Database (NVD) being run by the National Institute of Standards and Technology (NIST). Specifically it downloads only CVEs and CPEs relating to Wordpress.
+The scanner obtains these records via the NVD APIs. Though NVD provide free API calls without an API key, you can get 10x faster download speeds with an API key, so I recommend obtaining one from here (it's free and instant): <https://nvd.nist.gov/general/news/API-Key-Announcement>
+4. Once the CVEs and CPEs have been downloaded, they are stored locally in a compressed gzip file, and then the scanner will add to these stored records if it finds downloaded CPEs that do not have CVEs.
+5. Once all the Wordpress assets have been analyzed, then it will generate a html report, that will be accessible from the `files` folder located in this directory. Optionally, you can set the `--host` flag to make the scanner host a webserver to view the vulnerability report.
+
+## How to Run
 Note: I refer to \[cd] below, I mean [In your terminal, change your working directory via the (cd) command]
 
 Note: While the script executes, a Flask app will start - but it will not host any data until the report has been generated (so wait until a 2nd info message from Flask appears. It will appear at the end of execution if you use flags `--generate-report` and `--host`: http://127.0.0.1:5040/)
 
 Note: You can access all generated files in the script, in the `files` folder located in `wp-cve-scan`. And all filepaths this program accepts are relative to `./wp-cve-scan/files`
 
-1. To run this scanner, you'll first need to install docker.
+1. To run this scanner, you'll first need to install docker on the same machine hosting your Wordpress site to scan.
+   - This is due to the white-box nature of this scanner.
+   - (However, if you do not wish to install docker there, this scanner only needs access to the root directory of the Wordpress installation, so you could create a SSHFS mount to the Wordpress installation root directory, and then run this scanner using the mounted directory)
 2. Then do a git clone of this repo, and in your terminal, cd to the root of this repository.
 3. In the root of this directory, run in your terminal:
     `docker compose up`
