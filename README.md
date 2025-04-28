@@ -12,6 +12,10 @@ This product doesn't require a NIST API Key to work, but you get 10x faster down
 
 Note: I refer to \[cd] below, I mean [In your terminal, change your working directory via the (cd) command]
 
+Note: While the script executes, a Flask app will start - but it will not host any data until the report has been generated (so wait until a 2nd info message from Flask appears. It will appear at the end of execution if you use flags `--generate-report` and `--host`: http://127.0.0.1:5040/)
+
+Note: You can access all generated files in the script, in the `files` folder located in `wp-cve-scan`. And all filepaths this program accepts are relative to `./wp-cve-scan/files`
+
 1. To run this scanner, you'll first need to install docker.
 2. Then do a git clone of this repo, and in your terminal, cd to the root of this repository.
 3. In the root of this directory, run in your terminal:

@@ -12,6 +12,7 @@ services:
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - ./wp-cve-scan/files:/usr/src/app/wp-cve-scan/files
+    - ./wp-cve-scan/scripts/lib/cache:/usr/src/app/wp-cve-scan/scripts/lib/cache/
     ports:
       - "5040:5040"
     # Allow users to pass arguments to the Python script
