@@ -5,6 +5,7 @@
 !wp-cve-scan/
 !wp-cve-scan/**
 !README.md
+!docker-compose.yml
 
 # Ignore these directories
 __pycache__/

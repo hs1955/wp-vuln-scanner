@@ -1,0 +1,20 @@
+name: "WP-CVE-Scanner"
+
+services:
+### START: WP-SCAN SERVICES ###
+  wp-cve-scan:
+    build:
+      context: ./wp-cve-scan
+      dockerfile: Dockerfile
+    container_name: wp-cve-scan
+    # This application requires access to the Docker socket to run
+    # the WP-CLI container to scan WordPress sites.
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ./wp-cve-scan/files:/usr/src/app/wp-cve-scan/files
+    ports:
+      - "5040:5040"
+    # Allow users to pass arguments to the Python script
+    entrypoint: ["python3", "wp-cve-scanner.py"]
+    command: ["--help"] # Default command, can be overridden
+    # command: ["--do-all", "--location", "docker", "--container", "wordpress-install", "--php", "7.1", "--api-key", "YOUR-API-KEY-HERE", "--host"]
