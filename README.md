@@ -4,7 +4,7 @@ The aim of this project is to build a fairly easy to use open-source application
 Motivation:
 So I would like my app to have the potential to be an open source wordpress website vulnerability scanner.
 
-This product doesn't require a NIST API Key to work, but you get 10x faster download speeds with one, so I recommend obtaining one.
+This product doesn't require a NIST API Key to work, but you get 10x faster download speeds with one, so I recommend obtaining one from here (it's free and instant): https://nvd.nist.gov/general/news/API-Key-Announcement
 
 "This product uses the NVD API but is not endorsed or certified by the NVD."
 
