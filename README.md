@@ -63,6 +63,8 @@ To run this program, in your terminal cd to the root of this directory and run:
 docker compose up
 ```
 
+To change the parameters passed to the program, edit the `docker-compose.yml` file:
+
 1. View the help
 
 ```
